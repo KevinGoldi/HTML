@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="Script.js"></script>
+    <title>Danke dir!</title>
+</head>
+<body>
+    <h1>Vielen Dank!:)</h1>
+    <form action="/HTML/hello-world/index.html">
+        <button type="submit" value="Zurück">Hier gehts zurück</button>
+    </form>
+    <div>
+        <br><br><br><br>
+        <h2>Oder nutze diesen simplen Taschenrechner:</h2>
+        <form>
+			<label for="Zahl1">Die erste Zahl:</label>
+			<br>
+			<input type="number" id="Zahl1" name="Zahl1">
+			<br>
+			<label for="operator">welche Rechenoperation?</label>
+			<br>
+			<input type="text" id="operator" name="operator">
+			<br>
+            <label for="Zahl2">Die zweite Zahl:</label>
+			<br>
+			<input type="number" id="Zahl2" name="Zahl2">
+			<br>
+			<br>
+			<button type="button" onclick="rechner(Zahl1, Zahl2, operator)">berechnen</button>
+		</form>
+    </div>
+    <div id="centered">
+        <button type="button" onclick="coinFlip();">or flip a coin!</button>
+    </div>
+</body>
+</html>
