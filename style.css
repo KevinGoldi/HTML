@@ -3,6 +3,20 @@
     background-color: whitesmoke;
 }
 */
+#animation {
+    position: relative;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes spin {
+    0%   {left:0px; transform: rotate(0deg);}
+    25%  {left:300px; transform: rotate(10deg);}
+    50%  {left:0px; transform: rotate(0deg);}
+    75%  {left:300px; transform: rotate(10deg);}
+    100% {left:0px; transform: rotate(0deg);}
+  }
 
 iframe {
     align-self: center;
@@ -13,7 +27,7 @@ iframe {
 }
 
 body {
-    background-color: aliceblue;
+    background-color: rgb(255, 247, 239);
     padding: 10px;
 }
 
