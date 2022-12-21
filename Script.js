@@ -1,50 +1,3 @@
-// function taschenrechner() {
-//     var operator = document.getElementById("operator");
-//     var a = document.getElementById("Zahl1").value;
-//     var b = document.getElementById("Zahl2").value;
-//     var x = document.getElementById("operator").value;
-
-//     if (operator == "+") {
-//         x = a + b;
-//         alert(x);
-//     } else if (operator == "-") {
-//         x = a - b;
-//         alert(x);
-//     } else if (operator == "*") {
-//         x = a * b;
-//         alert(x);
-//     } else if (operator == "/") {
-//         x = a / b;
-//         alert(x);
-//     } else if (operator == "%") {
-//         x = a % b;
-//         alert(x);
-//     } else {
-//         alert("Bitte für den Operator nur folgende Zeichen benutzen: +, -, *, /, %")
-//     }
-
-//     switch (operator) {
-//         case "+":
-//             x = a + b
-//             alert(x);
-//         case "-":
-//             x = a - b
-//             return x;
-//         case "*":
-//             x = a * b;
-//             return x;
-//         case "/":
-//             x = a / b;
-//             return x;
-//         case "%":
-//             x = a % b;
-//             return x;
-//         default:
-//             alert("Bitte für den Operator nur folgende Zeichen benutzen: +, -, *, /, %")
-//             break;
-//     }
-// }
-
 function rechner(){
     var operand1 = document.getElementById("Zahl1").value;
     var operand2 = document.getElementById("Zahl2").value;
@@ -53,7 +6,7 @@ function rechner(){
 
     switch (operator) {
       case "+" :
-        res = parseInt(operand1) + parseInt(operand2)
+        res = parseFloat(operand1) + parseFloat(operand2)
         break;
       case "-" :
         res = operand1 - operand2
